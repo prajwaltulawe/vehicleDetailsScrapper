@@ -7,7 +7,7 @@ const path = require('path');
 
 app.use(express.static('public'));
 const mobNo = '9970943252';
-const pass = 'Pajya@123';
+const pass = '';
 
 app.get('/vehicleNo', (req, res) =>{
     
