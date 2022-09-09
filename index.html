@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css" />
+  <style>
+    body {
+      width: 80%;
+      margin: auto;
+      margin-top: 5%;
+      font-family: "Courier New", Courier, monospace;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <table id="table_id" class="display">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>M3</th>
+        <th>M3 2</th>
+        <th>PA</th>
+        <th>DBMS</th>
+        <th>CG</th>
+        <th>SE</th>
+        <th>Percentage</th>
+        <th>BACK</th>
+      </tr>
+    </thead>
+    <tr>
+      <td> AASHI SXAENA </td>
+      <td> C </td>
+      <td> A </td>
+      <td> C </td>
+      <td> D </td>
+      <td> B </td>
+      <td> C </td>
+      <td> 8.18 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> ADITYA SATISH CHOUTHANKAR </td>
+      <td> C </td>
+      <td> B </td>
+      <td> P </td>
+      <td> B </td>
+      <td> C </td>
+      <td> C </td>
+      <td> 7.77 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> AMRUTKAR SANIKA ANIL </td>
+      <td> C </td>
+      <td> O </td>
+      <td> P </td>
+      <td> D </td>
+      <td> C </td>
+      <td> D </td>
+      <td> 8.34 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> ANKITA BHARTI </td>
+      <td> B </td>
+      <td> A </td>
+      <td> E </td>
+      <td> D </td>
+      <td> B </td>
+      <td> C </td>
+      <td> 7.93 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> ANUJ ANIL NEMANWAR </td>
+      <td> B </td>
+      <td> A </td>
+      <td> P </td>
+      <td> D </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.00 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> ASHISH MUNDHE </td>
+      <td> A </td>
+      <td> A </td>
+      <td> C </td>
+      <td> B </td>
+      <td> A </td>
+      <td> C </td>
+      <td> 9.00 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> ATHARVASHIRSH T </td>
+      <td> A </td>
+      <td> A </td>
+      <td> E </td>
+      <td> C </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.11 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> AVANTIKA AKHILESH PANDEY </td>
+      <td> B </td>
+      <td> A </td>
+      <td> D </td>
+      <td> C </td>
+      <td> A </td>
+      <td> C </td>
+      <td> 8.41 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> AWASARE GAURAV MORESHWAR </td>
+      <td> B </td>
+      <td> A </td>
+      <td> D </td>
+      <td> B </td>
+      <td> A </td>
+      <td> C </td>
+      <td> 8.57 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> BADNAPURKAR MANSI MAHESH </td>
+      <td> C </td>
+      <td> A </td>
+      <td> E </td>
+      <td> C </td>
+      <td> C </td>
+      <td> D </td>
+      <td> 7.93 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> BAHETI TEJAS ANANDKUMAR </td>
+      <td> A </td>
+      <td> A </td>
+      <td> P </td>
+      <td> D </td>
+      <td> C </td>
+      <td> D </td>
+      <td> 8.39 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> BENDALE AYUSH VAIBHAV </td>
+      <td> O </td>
+      <td> O </td>
+      <td> D </td>
+      <td> C </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.93 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> BETHI SOUMYA VENKATESH </td>
+      <td> A </td>
+      <td> A </td>
+      <td> E </td>
+      <td> C </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.75 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> BHAGAT PRAJ RAVINDRA </td>
+      <td> O </td>
+      <td> C </td>
+      <td> D </td>
+      <td> D </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.68 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> BHOGLE PRANAV PRADIP </td>
+      <td> F </td>
+      <td> C </td>
+      <td> F </td>
+      <td> F </td>
+      <td> F </td>
+      <td> F </td>
+      <td> - -- </td>
+      <td> 5 </td>
+    </tr>
+    <tr>
+      <td> CHAUDHARI SAKSHI ARVIND </td>
+      <td> A </td>
+      <td> A </td>
+      <td> D </td>
+      <td> C </td>
+      <td> B </td>
+      <td> B </td>
+      <td> 8.80 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> CHAUDHARI TOSHAL DHANRAJ </td>
+      <td> A </td>
+      <td> A </td>
+      <td> D </td>
+      <td> C </td>
+      <td> B </td>
+      <td> C </td>
+      <td> 8.77 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> DEOLALIKAR MIHEER MANGESH </td>
+      <td> A </td>
+      <td> A </td>
+      <td> C </td>
+      <td> B </td>
+      <td> A </td>
+      <td> D </td>
+      <td> 8.68 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> DESHMUKH VAIBHAV AJIT </td>
+      <td> O </td>
+      <td> A </td>
+      <td> D </td>
+      <td> C </td>
+      <td> C </td>
+      <td> D </td>
+      <td> 8.52 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> DEVKATE VAIBHAV VIJAY </td>
+      <td> C </td>
+      <td> A </td>
+      <td> D </td>
+      <td> C </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.39 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> DHUMAL GANESH SHANKAR </td>
+      <td> C </td>
+      <td> A </td>
+      <td> D </td>
+      <td> C </td>
+      <td> C </td>
+      <td> C </td>
+      <td> 8.36 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> DIVEKAR ATHARV ASHOK </td>
+      <td> C </td>
+      <td> A </td>
+      <td> C </td>
+      <td> C </td>
+      <td> C </td>
+      <td> C </td>
+      <td> 8.05 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> GAJARE PRERANA RAJESH </td>
+      <td> D </td>
+      <td> A </td>
+      <td> C </td>
+      <td> C </td>
+      <td> B </td>
+      <td> B </td>
+      <td> 8.70 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> GIRASE LALIT KIRANKUMAR </td>
+      <td> B </td>
+      <td> A </td>
+      <td> D </td>
+      <td> C </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.48 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> GUPTA PRIYANSHU RAKESH </td>
+      <td> O </td>
+      <td> A </td>
+      <td> D </td>
+      <td> C </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.57 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> HARI CHANADANA CHERUKURI </td>
+      <td> D </td>
+      <td> B </td>
+      <td> E </td>
+      <td> D </td>
+      <td> B </td>
+      <td> C </td>
+      <td> 8.25 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> HIVARALE VISHAL AJIT </td>
+      <td> P </td>
+      <td> A </td>
+      <td> F </td>
+      <td> E </td>
+      <td> E </td>
+      <td> E </td>
+      <td> - -- </td>
+      <td> 1 </td>
+    </tr>
+    <tr>
+      <td> JAIPURKAR HERAMB RAJESH </td>
+      <td> E </td>
+      <td> C </td>
+      <td> P </td>
+      <td> P </td>
+      <td> P </td>
+      <td> D </td>
+      <td> 6.68 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> JANHAVI GANGARAM KUMBHAR </td>
+      <td> E </td>
+      <td> A </td>
+      <td> D </td>
+      <td> D </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 7.70 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> JOSHI ANAND VYANKATESH </td>
+      <td> E </td>
+      <td> A </td>
+      <td> E </td>
+      <td> P </td>
+      <td> C </td>
+      <td> P </td>
+      <td> 7.59 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> JOYCE JOSEPH </td>
+      <td> F </td>
+      <td> A </td>
+      <td> E </td>
+      <td> E </td>
+      <td> C </td>
+      <td> F </td>
+      <td> - -- </td>
+      <td> 2 </td>
+    </tr>
+    <tr>
+      <td> KAPSE SAMEER BHIMRAJ </td>
+      <td> F </td>
+      <td> A </td>
+      <td> P </td>
+      <td> F </td>
+      <td> C </td>
+      <td> F </td>
+      <td> - -- </td>
+      <td> 3 </td>
+    </tr>
+    <tr>
+      <td> KARALE UTKARSHA PRAKASH </td>
+      <td> E </td>
+      <td> A </td>
+      <td> D </td>
+      <td> D </td>
+      <td> B </td>
+      <td> C </td>
+      <td> 8.27 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> KODWATE MOHIT RAMDAS </td>
+      <td> F </td>
+      <td> C </td>
+      <td> F </td>
+      <td> F </td>
+      <td> C </td>
+      <td> E </td>
+      <td> - -- </td>
+      <td> 3 </td>
+    </tr>
+    <tr>
+      <td> KONDUBHAIRI PRADNYA MAHADEO </td>
+      <td> C </td>
+      <td> A </td>
+      <td> E </td>
+      <td> D </td>
+      <td> B </td>
+      <td> E </td>
+      <td> 8.16 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> KOTKAR ANUJA ARJUN </td>
+      <td> B </td>
+      <td> A </td>
+      <td> D </td>
+      <td> D </td>
+      <td> A </td>
+      <td> E </td>
+      <td> 8.41 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> KULKARNI PRAYUKTA PRADEEP </td>
+      <td> C </td>
+      <td> A </td>
+      <td> E </td>
+      <td> P </td>
+      <td> C </td>
+      <td> D </td>
+      <td> 7.95 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> KUMTHEKAR SIDHARTH MANOJ </td>
+      <td> B </td>
+      <td> A </td>
+      <td> C </td>
+      <td> C </td>
+      <td> A </td>
+      <td> B </td>
+      <td> 8.52 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> LATHKAR SHREYAS VISHAL </td>
+      <td> F </td>
+      <td> A </td>
+      <td> F </td>
+      <td> F </td>
+      <td> D </td>
+      <td> D </td>
+      <td> - -- </td>
+      <td> 3 </td>
+    </tr>
+    <tr>
+      <td> LIPI CHOUDHARY </td>
+      <td> F </td>
+      <td> A </td>
+      <td> D </td>
+      <td> E </td>
+      <td> C </td>
+      <td> D </td>
+      <td> - -- </td>
+      <td> 1 </td>
+    </tr>
+    <tr>
+      <td> MANSI GANESH MENGDE </td>
+      <td> F </td>
+      <td> A </td>
+      <td> C </td>
+      <td> E </td>
+      <td> D </td>
+      <td> P </td>
+      <td> - -- </td>
+      <td> 1 </td>
+    </tr>
+    <tr>
+      <td> MASANG SHUBHAM DEEPAK </td>
+      <td> B </td>
+      <td> A </td>
+      <td> D </td>
+      <td> D </td>
+      <td> C </td>
+      <td> D </td>
+      <td> 8.43 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> MORE RUTUJA DINKAR </td>
+      <td> F </td>
+      <td> A </td>
+      <td> F </td>
+      <td> F </td>
+      <td> F </td>
+      <td> F </td>
+      <td> - -- </td>
+      <td> 5 </td>
+    </tr>
+    <tr>
+      <td> MRINMAYEE MILIND JOSHI </td>
+      <td> E </td>
+      <td> C </td>
+      <td> P </td>
+      <td> D </td>
+      <td> D </td>
+      <td> D </td>
+      <td> 7.80 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> MUSALE GAURANG MANDAR </td>
+      <td> B </td>
+      <td> B </td>
+      <td> P </td>
+      <td> D </td>
+      <td> A </td>
+      <td> D </td>
+      <td> 8.27 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> NANGARE AJINKYA LAXMIKANT </td>
+      <td> B </td>
+      <td> A </td>
+      <td> B </td>
+      <td> C </td>
+      <td> A </td>
+      <td> D </td>
+      <td> 9.00 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> NARKHEDE PRATIK PREMCHAND </td>
+      <td> C </td>
+      <td> A </td>
+      <td> C </td>
+      <td> C </td>
+      <td> A </td>
+      <td> D </td>
+      <td> 8.75 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> OM SANJAY MAIND </td>
+      <td> D </td>
+      <td> A </td>
+      <td> D </td>
+      <td> D </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.36 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> OM VIJAY RANDHIRE </td>
+      <td> D </td>
+      <td> C </td>
+      <td> F </td>
+      <td> P </td>
+      <td> D </td>
+      <td> D </td>
+      <td> - -- </td>
+      <td> 1 </td>
+    </tr>
+    <tr>
+      <td> PATIL AVISHKAR ANIL </td>
+      <td> A </td>
+      <td> O </td>
+      <td> B </td>
+      <td> C </td>
+      <td> A </td>
+      <td> C </td>
+      <td> 9.25 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> PAWAR MANSI RATAN </td>
+      <td> B </td>
+      <td> A </td>
+      <td> C </td>
+      <td> C </td>
+      <td> A </td>
+      <td> C </td>
+      <td> 8.82 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> PHADTARE PRIYA VIJAY </td>
+      <td> P </td>
+      <td> A </td>
+      <td> P </td>
+      <td> P </td>
+      <td> D </td>
+      <td> P </td>
+      <td> 7.27 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> PIYUSH ANAND BALLAL </td>
+      <td> F </td>
+      <td> C </td>
+      <td> F </td>
+      <td> F </td>
+      <td> E </td>
+      <td> F </td>
+      <td> - -- </td>
+      <td> 4 </td>
+    </tr>
+    <tr>
+      <td> POORVADITYA BEHRE </td>
+      <td> A </td>
+      <td> A </td>
+      <td> D </td>
+      <td> D </td>
+      <td> B </td>
+      <td> C </td>
+      <td> 8.23 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> PRASAD DNYANDEV HULMUKHE </td>
+      <td> C </td>
+      <td> A </td>
+      <td> C </td>
+      <td> D </td>
+      <td> A </td>
+      <td> B </td>
+      <td> 8.11 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> PUNJABI VANDANA MAHESH </td>
+      <td> P </td>
+      <td> A </td>
+      <td> C </td>
+      <td> E </td>
+      <td> A </td>
+      <td> D </td>
+      <td> 8.07 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> RAJPUROHIT PRITISH SUGAN </td>
+      <td> P </td>
+      <td> A </td>
+      <td> P </td>
+      <td> P </td>
+      <td> D </td>
+      <td> P </td>
+      <td> 7.68 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> RISHABH SHRINIVAS MOHARIR </td>
+      <td> P </td>
+      <td> B </td>
+      <td> P </td>
+      <td> P </td>
+      <td> C </td>
+      <td> P </td>
+      <td> 7.70 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> SAILEE CHOUDHARI </td>
+      <td> B </td>
+      <td> A </td>
+      <td> D </td>
+      <td> D </td>
+      <td> A </td>
+      <td> C </td>
+      <td> 8.41 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> SHAHAPURE SURABHI SHRISHAILA </td>
+      <td> E </td>
+      <td> B </td>
+      <td> P </td>
+      <td> P </td>
+      <td> D </td>
+      <td> E </td>
+      <td> 7.59 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> SHINDE CHAITANYA VIKAS </td>
+      <td> A </td>
+      <td> A </td>
+      <td> C </td>
+      <td> C </td>
+      <td> A </td>
+      <td> C </td>
+      <td> 8.93 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> SHINDE TEJAS SANJAY </td>
+      <td> B </td>
+      <td> A </td>
+      <td> E </td>
+      <td> E </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.34 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> SHIROLE SAIRAJ BABASAHEB </td>
+      <td> C </td>
+      <td> A </td>
+      <td> E </td>
+      <td> D </td>
+      <td> C </td>
+      <td> D </td>
+      <td> 7.91 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> SIDDHARTH HIRAOU </td>
+      <td> B </td>
+      <td> B </td>
+      <td> P </td>
+      <td> C </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.45 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> SONKE PANKAJ RAJU </td>
+      <td> D </td>
+      <td> A </td>
+      <td> D </td>
+      <td> B </td>
+      <td> A </td>
+      <td> C </td>
+      <td> 7.84 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> SONMALE OMKAR VINAYAK </td>
+      <td> D </td>
+      <td> A </td>
+      <td> D </td>
+      <td> D </td>
+      <td> B </td>
+      <td> C </td>
+      <td> 8.36 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> TAMAYACHEKAR ANANYAPRANAV SHRAVAN </td>
+      <td> D </td>
+      <td> A </td>
+      <td> P </td>
+      <td> P </td>
+      <td> C </td>
+      <td> D </td>
+      <td> 6.77 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> TEJAS KOLI </td>
+      <td> C </td>
+      <td> A </td>
+      <td> E </td>
+      <td> C </td>
+      <td> A </td>
+      <td> C </td>
+      <td> 8.50 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> TINA VERMA </td>
+      <td> D </td>
+      <td> A </td>
+      <td> P </td>
+      <td> C </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.39 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> TULAWE PRAJWAL RAJU </td>
+      <td> C </td>
+      <td> A </td>
+      <td> P </td>
+      <td> C </td>
+      <td> C </td>
+      <td> D </td>
+      <td> 8.25 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> VAISHNAV PRAJAKTA RATANDAS </td>
+      <td> F </td>
+      <td> D </td>
+      <td> F </td>
+      <td> F </td>
+      <td> P </td>
+      <td> P </td>
+      <td> - -- </td>
+      <td> 3 </td>
+    </tr>
+    <tr>
+      <td> VIRANEY HASNAIN KAIZAR </td>
+      <td> A </td>
+      <td> C </td>
+      <td> D </td>
+      <td> C </td>
+      <td> A </td>
+      <td> D </td>
+      <td> 8.39 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> VIRDHE PARTH PRAMOD </td>
+      <td> D </td>
+      <td> A </td>
+      <td> D </td>
+      <td> C </td>
+      <td> C </td>
+      <td> D </td>
+      <td> 8.20 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> WAGHMARE SAKSHI DNYANOBA </td>
+      <td> E </td>
+      <td> B </td>
+      <td> F </td>
+      <td> P </td>
+      <td> D </td>
+      <td> D </td>
+      <td> - -- </td>
+      <td> 1 </td>
+    </tr>
+    <tr>
+      <td> WAGHOLE AKANSHA SUKHADEO </td>
+      <td> D </td>
+      <td> A </td>
+      <td> D </td>
+      <td> C </td>
+      <td> B </td>
+      <td> D </td>
+      <td> 8.30 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> ZARIKAR DATTA DILIP </td>
+      <td> B </td>
+      <td> A </td>
+      <td> D </td>
+      <td> D </td>
+      <td> C </td>
+      <td> C </td>
+      <td> 8.59 </td>
+      <td> 0 </td>
+    </tr>
+    <tr>
+      <td> ZOD PRANIT PRADIP </td>
+      <td> B </td>
+      <td> A </td>
+      <td> D </td>
+      <td> B </td>
+      <td> A </td>
+      <td> C </td>
+      <td> 8.61 </td>
+      <td> 0 </td>
+    </tr>
+    <tbody>
+
+    </tbody>
+  </table>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#table_id").DataTable({});
+  });
+</script>
+
+</html>
