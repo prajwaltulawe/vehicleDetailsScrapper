@@ -6,8 +6,8 @@ const port = 8000;
 const path = require('path');
 
 app.use(express.static('public'));
-const mobNo = '9970943252';
-const pass = 'Pajya@123';
+const mobNo = '';
+const pass = '';
 
 app.get('/vehicleNo', (req, res) =>{
     
@@ -50,7 +50,7 @@ app.get('/vehicleNo', (req, res) =>{
                                 clearInterval(openPage);
                             }
                             function showDetails(){
-                                const openPage = setInterval(openWindow, 10000);
+                                const openPage = setInterval(openWindow, 5000);
                             }
                         </script>
                     </html>`);
@@ -102,7 +102,7 @@ app.get('/vehicleNo', (req, res) =>{
             app.get('/getCaptcha', async (req, res) =>{
                 var captchaInput = await page.waitForXPath("//input[@id='vahancaptcha:CaptchaID']");
                 await captchaInput.type(req.query.captcha);
-                await page.click('#j_idt55'); 
+                await page.click('#j_idt67'); 
                 await new Promise(r => setTimeout(r, 3000));        
                 var data =  await page.evaluate(() => {
                     const details = {};
